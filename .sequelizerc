@@ -1,0 +1,9 @@
+require('dotenv').config();
+import { resolve } from 'path';
+
+export default {
+  config: path.resolve('src/sequelize/config', 'config.json'),
+  'models-path': resolve('src/sequelize', 'models'),
+  'migrations-path': resolve('src/sequelize', 'migrations'),
+  'seeders-path': resolve('src/sequelize', 'seeders'),
+};

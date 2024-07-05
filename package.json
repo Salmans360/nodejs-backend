@@ -1,0 +1,58 @@
+{
+  "name": "pos-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js  --logLevel=error",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all",
+    "debug": "nodemon --exec babel-node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "agenda": "^5.0.0",
+    "aws-sdk": "2.1354.0",
+    "axios": "^1.2.2",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.20.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "csv-file-validator": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "email-templates": "^11.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "http-status": "^1.6.1",
+    "intuit-oauth": "^4.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "md5": "^2.3.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1",
+    "nodemailer-mandrill-transport": "^1.2.0",
+    "nodemon": "3.0.0",
+    "passport": "^0.6.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "pug": "^3.0.2",
+    "sequelize": "6.29.0",
+    "stripe": "^11.9.1",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.2"
+  }
+}
